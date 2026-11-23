@@ -10,9 +10,9 @@ Exploratory Data Analysis of Titanic passenger records using Python and Pandas.
 
 ## Repository contents
 
-- `Titanic_EDA_Project.ipynb` — explained Jupyter notebook containing data inspection, cleaning, group comparisons, visualizations and written findings.
-- `titanic.csv` — dataset used by the notebook. Keep this file in the same directory as the notebook.
-- `Titanic_EDA_Summary_Report.pdf` — written project summary with numerical findings and methodology.
+- `Titanic_EDA_Project.ipynb` — explained Jupyter notebook containing data inspection, cleaning, group comparisons, visualizations and numerical findings.
+- `titanic.csv` — the 891-row passenger dataset used by the notebook. Keep it in the same directory as the notebook.
+- `Titanic_EDA_Summary_Report.md` — written project summary with numerical findings, methodology and limitations.
 - `requirements.txt` — Python dependencies.
 
 ## Run the notebook
@@ -33,18 +33,14 @@ Exploratory Data Analysis of Titanic passenger records using Python and Pandas.
 
 5. Open `Titanic_EDA_Project.ipynb` and select **Kernel → Restart & Run All**.
 
-The notebook reads `titanic.csv` from its current directory.
+The notebook reads `titanic.csv` from its current working directory. Google Colab can also be used; upload both the notebook and CSV before running all cells.
 
 ## Analysis approach
 
-The notebook uses `head()`, `info()`, `describe()`, missing-value counts and duplicate checks. Missing ages are filled with the median age for the corresponding passenger class and sex group; missing embarkation ports are filled with the mode; the highly incomplete deck/cabin column is dropped. Exact duplicate rows are counted, not blindly removed.
+The notebook uses `head()`, `info()`, `describe()`, missing-value counts and duplicate checks. Missing ages are filled with the median age for the corresponding passenger class and sex group; missing embarkation ports are filled with the mode; and the highly incomplete deck/cabin column is dropped. Exact duplicate rows are counted, not blindly removed.
 
 Survival rates are compared by sex, passenger class and age band. Results are descriptive associations and should not be interpreted as proof of causation.
 
-## Expected findings
-
-The accompanying report and notebook calculate the observed group rates from the included data. Re-run the notebook to reproduce the tables, charts and numerical findings.
-
 ## Notes
 
-This is an educational exploratory analysis of historical Titanic passenger data. Add your name or student details to the notebook if required by your course before submission.
+This is an educational exploratory analysis of historical Titanic passenger data. Add your name or student details to the notebook if required by your course before submission. Run all cells successfully before submitting the repository link to InternCircle My Tasks.
